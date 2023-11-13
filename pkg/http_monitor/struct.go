@@ -5,11 +5,11 @@ type BaseRequest struct {
 }
 
 type TaskRequest struct {
-	Type     string `json:"type"`
-	UUID     string `json:"uuid"`
-	URL      string `json:"url"`
-	Timeout  uint   `json:"timeout"`
-	TargetIP string `json:"target_ip,omitempty"`
+	Type       string `json:"type"`
+	UUID       string `json:"uuid"`
+	URL        string `json:"url"`
+	Timeout    uint   `json:"timeout"`
+	TargetAddr string `json:"target_addr,omitempty"`
 }
 
 type TaskResponse struct {
@@ -18,6 +18,7 @@ type TaskResponse struct {
 	HTTPCode    int     `json:"http_code,omitempty"`
 	ErrMsg      string  `json:"err_msg,omitempty"`
 	ConsumeTime float64 `json:"consume_time,omitempty"`
+	TargetAddr  string  `json:"target_addr,omitempty"`
 }
 
 type AuthRequest struct {
