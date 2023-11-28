@@ -1,4 +1,4 @@
-package cr
+package repo_list
 
 type RepoDomainList struct {
 	Internal string `json:"internal,omitempty"`
