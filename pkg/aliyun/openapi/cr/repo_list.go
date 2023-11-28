@@ -5,7 +5,8 @@ type RepoDomainList struct {
 	Public   string `json:"public,omitempty"`
 	Vpc      string `json:"vpc,omitempty"`
 }
-type Repos struct {
+
+type Repo struct {
 	Summary           string         `json:"summary,omitempty"`
 	RepoID            int            `json:"repoId,omitempty"`
 	GmtModified       int64          `json:"gmtModified,omitempty"`
@@ -25,10 +26,10 @@ type Repos struct {
 }
 
 type Data struct {
-	Total    int     `json:"total,omitempty"`
-	Repos    []Repos `json:"repos,omitempty"`
-	PageSize int     `json:"pageSize,omitempty"`
-	Page     int     `json:"page,omitempty"`
+	Total    int    `json:"total,omitempty"`
+	Repos    []Repo `json:"repos,omitempty"`
+	PageSize int    `json:"pageSize,omitempty"`
+	Page     int    `json:"page,omitempty"`
 }
 
 type ResponseData struct {
