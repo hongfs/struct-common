@@ -17,6 +17,6 @@ type Value struct {
 	Value       string    `json:"value,omitempty"`
 	UA          string    `json:"ua,omitempty"`
 	Mark        string    `json:"mark,omitempty"`
-	EnableQuota bool      `json:"enable_quota,omitempty"`
-	AccessQuota int64     `json:"access_quota,omitempty"`
+	EnableQuota bool      `json:"enable_quota"`
+	AccessQuota int64     `json:"access_quota"`
 }
