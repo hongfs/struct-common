@@ -8,7 +8,6 @@ type Request struct {
 }
 
 type Response struct {
-	Code  int    `json:"code"`
-	Msg   string `json:"msg"`
+	Title string `json:"title"`
 	Image string `json:"image"`
 }
