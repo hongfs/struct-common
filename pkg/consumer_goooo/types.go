@@ -7,3 +7,5 @@ var ErrSuccess = errors.New("success")
 var ErrTimeout = errors.New("timeout")
 
 var ErrRetry = errors.New("retry")
+
+var ErrMaxRetry = errors.New("max retry")
