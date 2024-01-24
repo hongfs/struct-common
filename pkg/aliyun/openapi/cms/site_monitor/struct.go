@@ -39,7 +39,6 @@ type Item struct {
 	Txts                  string  `json:"txts"`
 	TCPConnectTime        float64 `json:"tcpConnectTime"`
 	CityEN                string  `json:"cityEN"`
-	HTTPDownloadSpeed     int     `json:"HTTPDownloadSpeed"`
 	PingMinTime           string  `json:"pingMinTime"`
 	HTTPDownloadTime      float64 `json:"HTTPDownloadTime"`
 	HTTPResponseCode      float64 `json:"HTTPResponseCode"`
