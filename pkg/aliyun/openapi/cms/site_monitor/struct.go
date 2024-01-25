@@ -71,3 +71,10 @@ type Item struct {
 	CityCN                string  `json:"cityCN"`
 	TaskID                string  `json:"taskId"`
 }
+
+type Node struct {
+	Country string `json:"country"`
+	Region  string `json:"region"`
+	ISP     string `json:"isp"`
+	City    string `json:"city"`
+}
