@@ -1,5 +1,9 @@
 package http_monitor
 
+type TaskType uint8
+
+
+
 type BaseRequest struct {
 	Type string `json:"type"`
 }
