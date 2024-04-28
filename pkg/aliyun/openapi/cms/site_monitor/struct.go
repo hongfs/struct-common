@@ -73,8 +73,10 @@ type Item struct {
 }
 
 type Node struct {
-	Country string `json:"country"`
-	Region  string `json:"region"`
-	ISP     string `json:"isp"`
-	City    string `json:"city"`
+	Country  string `json:"country"`
+	Region   string `json:"region"`
+	ISP      string `json:"isp"`
+	ISPName  string `json:"isp_name"`
+	City     string `json:"city"`
+	CityName string `json:"city_name"`
 }
