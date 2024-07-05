@@ -2,8 +2,6 @@ package http_monitor
 
 type TaskType uint8
 
-
-
 type BaseRequest struct {
 	Type string `json:"type"`
 }
@@ -14,6 +12,7 @@ type TaskRequest struct {
 	URL        string `json:"url"`
 	Timeout    uint   `json:"timeout"`
 	TargetAddr string `json:"target_addr,omitempty"`
+	CloudApi   Cloud  `json:"cloud_api,omitempty"`
 }
 
 type TaskResponse struct {
@@ -32,4 +31,16 @@ type AuthRequest struct {
 
 type AuthResponse struct {
 	Type string `json:"type"`
+}
+
+type Cloud struct {
+	Provider string `json:"provider"`
+	Product  string `json:"product"`
+	Region   string `json:"region"`
+	Name     string `json:"name"`
+}
+
+type CloudKey struct {
+	Key    string `json:"key"`
+	Secret string `json:"secret"`
 }
