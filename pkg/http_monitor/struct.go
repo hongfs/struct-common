@@ -43,4 +43,5 @@ type Cloud struct {
 type CloudKey struct {
 	Key    string `json:"key"`
 	Secret string `json:"secret"`
+	Token  string `json:"token"`
 }
