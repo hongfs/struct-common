@@ -30,6 +30,7 @@ type Skus struct {
 	Spec         string  `json:"spec,omitempty"`
 	Specs        []Specs `json:"specs,omitempty"`
 	Price        int     `json:"price,omitempty"` // skuPrice
+	SkuPrice     int     `json:"skuPrice,omitempty"`
 	NormalPrice  string  `json:"normalPrice,omitempty"`
 	GroupPrice   string  `json:"groupPrice,omitempty"`
 }
