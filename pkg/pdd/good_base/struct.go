@@ -31,8 +31,8 @@ type Skus struct {
 	Specs        []Specs `json:"specs,omitempty"`
 	Price        int     `json:"price,omitempty"` // skuPrice
 	SkuPrice     int     `json:"skuPrice,omitempty"`
-	NormalPrice  string  `json:"normalPrice,omitempty"`
-	GroupPrice   string  `json:"groupPrice,omitempty"`
+	NormalPrice  float64 `json:"normalPrice,omitempty"`
+	GroupPrice   float64 `json:"groupPrice,omitempty"`
 }
 
 type GoodsProperty struct {
@@ -55,7 +55,7 @@ type Goods struct {
 	CatID1        int             `json:"catID1,omitempty"`
 	CatID2        int             `json:"catID2,omitempty"`
 	CatID3        int             `json:"catID3,omitempty"`
-	CatID4        int             `json:"catID4,omitempty"`
+	CatID4        int             `json:"catID4"`
 	GoodsProperty []GoodsProperty `json:"goodsProperty,omitempty"`
 	LinePrice     string          `json:"linePrice,omitempty"`
 }
