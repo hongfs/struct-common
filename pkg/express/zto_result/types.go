@@ -1,4 +1,4 @@
-type zto_result
+package zto_result
 
 type AddressInfo struct {
 	Name     string `json:"name,omitempty"`
